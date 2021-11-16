@@ -1,12 +1,28 @@
 // Put your code here
 
-const names = [
-   "Nashville", "Hong Kong", "The back yard", "Earth",
-    "London", "The mall", "Ryman Auditorium", "The Great Wall of China"
-];
+const arrayTaco = [
+  "Nashville", "Hong Kong", "The back yard", "Earth",
+  "London", "The mall", "Ryman Auditorium", "The Great Wall of China"
+]
 
-console.log("All Pace Names");
+console.log("All Place Names");
 
-for (const name of names) {
-  console.log(name);
-}
+arrayTaco.forEach(element => {
+  console.log(element);
+});
+
+console.log("");
+
+// arrayTaco.forEach(element => {
+//     if (element.startsWith("The")) {
+//         console.log(element);
+//     }
+// });
+
+const arrayTacoThe = arrayTaco.filter(test => test.startsWith("The"));
+
+console.log(arrayTacoThe);
+
+arrayTacoThe.forEach(theElem => {
+  console.log(theElem);
+});
