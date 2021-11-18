@@ -22,11 +22,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function createDie(value) {
+function createDie(taco) {
 
     return {
-        value,
-        roll: tacoRun(value)
+        value: taco,
+        roll: tacoRun(taco)
     };
 
 }
